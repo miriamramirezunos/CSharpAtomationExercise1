@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace E1CSharpAutomation
 {
-    class unitTestCustomAssert
+    class CustomAssert
     {
         // Custom Assert to print successful validation message
-        public void isTheSameText(String actual, String expected)
+        public void IsTheSameText(String actual, String expected)
         {
             if (actual.Trim() == expected.Trim())
             {
@@ -19,7 +19,7 @@ namespace E1CSharpAutomation
             }
             else
             {
-                throw new unitTestCustomException($"Custom Exception Message. Custom Assert. Failed Assert: The text \"{actual}\" is different compared with \"{expected}\"");
+                throw new CustomException($"Custom Exception Message. Custom Assert. Failed Assert: The text \"{actual}\" is different compared with \"{expected}\"");
             }
         }
     }

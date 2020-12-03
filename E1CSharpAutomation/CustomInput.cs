@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace E1CSharpAutomation
 {
-    class unitTestInput : IuserInput
+    class CustomInput : IuserInput
     {   public string GetInput()
         {
             return "C"; 

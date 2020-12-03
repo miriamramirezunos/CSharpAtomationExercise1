@@ -62,12 +62,13 @@
     <Compile Include="ConsoleApp.cs" />
     <Compile Include="IuserInput.cs" />
     <Compile Include="methodsClass.cs" />
-    <Compile Include="unitTestCustomAssert.cs" />
-    <Compile Include="unitTestCustomException.cs" />
-    <Compile Include="unitTestSetUp.cs" />
-    <Compile Include="unitTest1.cs" />
+    <Compile Include="CustomAssert.cs" />
+    <Compile Include="CustomException.cs" />
+    <Compile Include="SetUp.cs" />
+    <Compile Include="TestInteraction.cs" />
+    <Compile Include="Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="unitTestInput.cs" />
+    <Compile Include="CustomInput.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
