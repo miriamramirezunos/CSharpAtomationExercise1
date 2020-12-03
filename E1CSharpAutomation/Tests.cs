@@ -38,18 +38,19 @@ namespace Exercise1CSharpA
             catch (Exception ex)
             {
                 Console.WriteLine("Error: {0}", ex.Message);
-            }            
+            }
+        }
 
-            void closeAll()
+        [TestCleanup]
+        public void closeAll()
+        {
+            try
             {
-                try
-                {
-                    driver.Close();
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("Error: {0}", ex.Message);
-                }
+                driver.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: {0}", ex.Message);
             }
         }
     }
